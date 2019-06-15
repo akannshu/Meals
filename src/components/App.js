@@ -12,12 +12,12 @@ class App extends Component {
     )
   }
 }
-function mapStateToProps(calendar) {
+function mapStateToProps({calendar, food}) {
   return {
     calendar: Object.keys(calendar)
       .map((day) => ({
         day,
-        meals: Object.assign({},calendar[day])}
+        meals: Object.assign({},food[calendar[day]])}
       ))
   }
 }
