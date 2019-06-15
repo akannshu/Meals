@@ -21,4 +21,13 @@ function mapStateToProps(calendar) {
       ))
   }
 }
-export default connect(mapStateToProps)(App)
+
+function mapDispatchToProps(){
+  return {
+   selectRecipe: addRecipe,
+   remove: removeFromCalendar
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
