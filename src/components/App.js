@@ -4,10 +4,11 @@ import { addRecipe, removeFromCalendar} from '../actions'
 import { capitalize } from '../utils/helper'
 import CalendarIcon from 'react-icons/lib/fa/calendar-plus-o'
 import Modal from 'react-modal'
-import { FaArrowCircleRight } from 'react-icons/fa' // have to change name in the code as well
 import Loading from 'react-loading'
+import ArrowRightIcon from 'react-icons/lib/fa/arrow-circle-right'
+import ShopingList from './ShoppingList'
 import { fetchRecipes } from '../utils/api'
-import FoodList from '../components/FoodList'
+import FoodList from './FoodList'
 
 class App extends Component {
   state = {
@@ -107,7 +108,7 @@ class App extends Component {
                     <button
                      className='icon-btn'
                       onClick={this.searchFood}>
-                       <FaArrowCircleRight size={30}/>
+                      <ArrowRightIcon  size={30}/>
                     </button>
                  </div>
                  {food !== null && (
