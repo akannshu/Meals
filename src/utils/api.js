@@ -8,3 +8,6 @@ export function fetchRecipes (food = '') {
     .then((res) => res.json())
     .then(({ hits }) => hits.map(({ recipe }) => recipe))
 }
+
+
+// //you can create your api id by https://developer.edamam.com/
