@@ -1,6 +1,6 @@
 # Meals
 #### This is a React-Redux based app to your food chart for the week and also provides you with the ingridients you would need to make your dish.
-Some Snaps of the project
+## Some Snaps of the project
 
 ### HomeScreen
 
